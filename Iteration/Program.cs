@@ -9,24 +9,61 @@ namespace Iteration
     {
         static void Main(string[] args)
         {
-            int[] testScores = { 98, 99, 85, 70, 82, 34, 91, 90, 94 };
+            //int[] testScores = { 98, 99, 85, 70, 82, 34, 91, 90, 94 };
 
-            for (int i = 0; i < testScores.Length; i++)
+            //for (int i = 0; i < testScores.Length; i++)
+            //{
+            //    if (testScores[i] > 85)
+            //    {
+            //        Console.WriteLine("Passing test score " + testScores[i]);
+            //    }
+            //}
+
+            //Console.WriteLine("\n\n\n\n");
+
+            //string[] names = { "Jesse", "Ryan", "Bob Guy", "Adam" };
+            //for (int i = 0; i < names.Length; i++)
+            //{
+            //    Console.WriteLine(names[i]);
+            //}
+
+            //Console.WriteLine("\n\n\n\n");
+
+            //List<int> testScores = new List<int>();
+            //testScores.Add(98);
+            //testScores.Add(99);
+            //testScores.Add(81);
+            //testScores.Add(72);
+            //testScores.Add(70);
+
+            //foreach (int score in testScores)
+            //{
+            //    if (score > 85)
+            //    {
+            //        Console.WriteLine("passing test score " + score);
+            //    }
+            //}
+
+            //List<string> names = new List<string>() { "Jesse", "Ryan", "Bob Guy", "Adam" };
+
+            //foreach (string name in names)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+            List<int> testScores = new List<int>() { 98, 99, 12, 74, 23, 99 };
+            List<int> passingScores = new List<int>();
+
+            foreach (int score in testScores)
             {
-                if (testScores[i] > 85)
+                if (score > 85)
                 {
-                    Console.WriteLine("Passing test score " + testScores[i]);
+                    passingScores.Add(score);
                 }
             }
 
-            string[] names = { "Jesse", "Ryan", "Bob Guy", "Adam" };
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (names[i] == "Jesse")
-                {
-                    Console.WriteLine(names[i]);
-                }
-            }
+            Console.WriteLine(passingScores.Count);
+
 
             Console.Read();
         }
